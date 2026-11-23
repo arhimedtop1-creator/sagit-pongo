@@ -1,0 +1,9 @@
+dir /dev 0755 0 0
+dir /dev/graphics 0755 0 0
+dir /proc 0555 0 0
+dir /sys 0555 0 0
+dir /run 0755 0 0
+nod /dev/console 0600 0 0 c 5 1
+nod /dev/kmsg 0600 0 0 c 1 11
+nod /dev/graphics/fb0 0666 0 0 c 29 0
+file /init /home/art/pongo/real-linux/build/pongo_real 0755 0 0
